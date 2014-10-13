@@ -1,0 +1,13 @@
+#include "stdio.h"
+#include "string.h"
+
+void main() 
+{
+   char string_source[10]= "quiz1";
+   char string_dest[10]="empty";
+
+   printf("before = %s \n", string_dest);
+   strcpy (string_dest, string_source);
+   printf("after = %s \n", string_dest);
+  
+};
