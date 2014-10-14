@@ -1,0 +1,36 @@
+#include "stdio.h"
+#include "string.h"
+
+//int strcmp(void * string1, void * string2);
+int compare_string(char *first, char *second);
+
+int main() 
+{
+   char string_source[10]= "aaaa", *source_ptr;
+   char string_dest[10]="bbbb", *dest_ptr;
+   source_ptr = string_source;
+   dest_ptr = string_dest;
+  
+   if (compare_string(source_ptr, dest_ptr) == 0)
+      printf ("\n match");
+   else
+      printf ("\n not match");
+
+   return (0);
+};
+
+int compare_string(char *first, char *second)
+{
+   while(*first==*second)
+   {
+      if ( *first == '\0' || *second == '\0' )
+         break;
+
+      first++;
+      second++;
+   }
+   if( *first == '\0' && *second == '\0' )
+      return 0;
+   else
+      return -1;
+}
