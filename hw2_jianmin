@@ -1,0 +1,44 @@
+HW2: (I spent ~2 hours on this hw2)
+I have found an ebed program called "hello_serial", and was able to compile it and download to the ebed controller. It was able to run correctly.
+I have also exported to GCC and uVision.
+
+Regarding the two goals of HW2, below are some findings I got:
+
+    - what mbed APIs that mbed support:
+    The mbed APIS are recorded in the mbed/Files/LPC17xx.h
+    Enumerations 
+enum   IRQn { 
+  NonMaskableInt_IRQn = -14, HardFault_IRQn = -13, SVCall_IRQn = -5, PendSV_IRQn = -2, 
+  SysTick_IRQn = -1, DMA0_IRQn = 0, DMA1_IRQn = 1, DMA2_IRQn = 2, 
+  DMA3_IRQn = 3, Reserved20_IRQn = 4, FTFA_IRQn = 5, LVD_LVW_IRQn = 6, 
+  LLW_IRQn = 7, I2C0_IRQn = 8, I2C1_IRQn = 9, SPI0_IRQn = 10, 
+  SPI1_IRQn = 11, UART0_IRQn = 12, UART1_IRQn = 13, UART2_IRQn = 14, 
+  ADC0_IRQn = 15, CMP0_IRQn = 16, TPM0_IRQn = 17, TPM1_IRQn = 18, 
+  TPM2_IRQn = 19, RTC_IRQn = 20, RTC_Seconds_IRQn = 21, PIT_IRQn = 22, 
+  Reserved39_IRQn = 23, USB0_IRQn = 24, DAC0_IRQn = 25, TSI0_IRQn = 26, 
+  MCG_IRQn = 27, LPTimer_IRQn = 28, Reserved45_IRQn = 29, PORTA_IRQn = 30, 
+  PORTD_IRQn = 31, NonMaskableInt_IRQn = -14, MemoryManagement_IRQn = -12, BusFault_IRQn = -11, 
+  UsageFault_IRQn = -10, SVCall_IRQn = -5, DebugMonitor_IRQn = -4, PendSV_IRQn = -2, 
+  SysTick_IRQn = -1, WDT_IRQn = 0, TIMER0_IRQn = 1, TIMER1_IRQn = 2, 
+  TIMER2_IRQn = 3, TIMER3_IRQn = 4, UART0_IRQn = 5, UART1_IRQn = 6, 
+  UART2_IRQn = 7, UART3_IRQn = 8, PWM1_IRQn = 9, I2C0_IRQn = 10, 
+  I2C1_IRQn = 11, I2C2_IRQn = 12, SPI_IRQn = 13, SSP0_IRQn = 14, 
+  SSP1_IRQn = 15, PLL0_IRQn = 16, RTC_IRQn = 17, EINT0_IRQn = 18, 
+  EINT1_IRQn = 19, EINT2_IRQn = 20, EINT3_IRQn = 21, ADC_IRQn = 22, 
+  BOD_IRQn = 23, USB_IRQn = 24, CAN_IRQn = 25, DMA_IRQn = 26, 
+  I2S_IRQn = 27, ENET_IRQn = 28, RIT_IRQn = 29, MCPWM_IRQn = 30, 
+  QEI_IRQn = 31, PLL1_IRQn = 32 , WDT_IRQn = 0, TIMER0_IRQn = 4, 
+  TIMER1_IRQn = 5, UART0_IRQn = 6, UART1_IRQn = 7, PWM1_IRQn = 8, 
+  I2C0_IRQn = 9, SPI_IRQn = 10, SSP0_IRQn = 10, SSP1_IRQn = 11, 
+  PLL0_IRQn = 12, RTC_IRQn = 13, EINT0_IRQn = 14, EINT1_IRQn = 15, 
+  EINT2_IRQn = 16, EINT3_IRQn = 17, ADC_IRQn = 18, I2C1_IRQn = 19, 
+  BOD_IRQn = 20, ENET_IRQn = 21, USB_IRQn = 22, CAN_IRQn = 23, 
+  MIC_IRQn = 24, DMA_IRQn = 25, TIMER2_IRQn = 26, TIMER3_IRQn = 27, 
+  UART2_IRQn = 28, UART3_IRQn = 29, I2C2_IRQn = 30, I2S_IRQn = 31 
+} 
+
+    
+    
+    - what is the mbed project directory layout
+    
+    ebed includes: Classes, Files, Structs and Groups
