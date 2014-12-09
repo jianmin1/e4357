@@ -1,0 +1,35 @@
+--------------------------------------------------------------------
+1. What is the _mask value for LED1? [answer] = 0x2009 c030
+   What is the address of FIOSET? [answer] =0x2009 c038
+
+
+
+
+
+--------------------------------------------------------------------
+2. What is the RS232 Frame? [answer]
+The RS232 standard describes a communication method where information is sent bit by bit on a physical channel. With RS232, the line voltage level can have two states. The on state is also known as mark, the off state as space. No other line states are possible. When the line is idle, it is kept in the mark state.
+It has start bit, data bits, parity bit, stop bits.
+
+
+
+
+--------------------------------------------------------------------
+3. Explain the start and stop conditions of i2c?
+[answer] start condition: SDA low and SCL low
+stop conition: SCL high and SDA high
+
+
+
+
+--------------------------------------------------------------------
+4. Is the i2c acknowledge SDA LOW or SDA HIGH?
+
+[answer] SDA low
+
+
+--------------------------------------------------------------------
+5. Tell me about the DDR3 write leveling Concept in one sentence.  
+   (ref: slides)
+[answer] It is a method for memory controller to ajust DAS to compenstate for unbalanced loading on write/read operations
+
